@@ -22,6 +22,12 @@
   }
 }
 
+@layer components {
+  .btn-3d {
+    @apply flex items-center justify-center px-6 py-3 text-white border-b-4 font-medium rounded-full transition-[border-width,background-color] active:border-0;
+  }
+}
+
 @layer utilities {
   .container {
     @apply max-w-base w-full px-5 mx-auto;
