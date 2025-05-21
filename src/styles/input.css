@@ -20,6 +20,10 @@
   body {
     @apply bg-brand-gray text-brand-dark font-inter;
   }
+
+  button {
+    @apply cursor-pointer;
+  }
 }
 
 @layer components {

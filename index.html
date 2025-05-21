@@ -89,7 +89,7 @@
 
           <!-- Description -->
           <p class="text-xl mb-7">
-            Dasturlash, texnologiyalar va zamonaviy kasblar bo‘yicha chuqur
+            Dasturlash, texnologiyalar va zamonaviy kasblar bo'yicha chuqur
             bilim oling — amaliy darslar, tajribali mentorlar va real loyihalar
             bilan!
           </p>
@@ -132,5 +132,135 @@
         />
       </div>
     </div>
+
+    <main>
+      <!-- About  -->
+      <section class="py-12">
+        <div class="container">
+          <!-- Title -->
+          <h2 class="text-[40px] font-semibold mb-5">Biz haqimizda</h2>
+
+          <!-- Main content -->
+          <div class="grid grid-cols-2 gap-5 mb-5">
+            <!-- Content details -->
+            <div class="bg-white p-8 rounded-2xl">
+              <!-- Subtitle -->
+              <div class="font-semibold text-2xl mb-5">
+                <strong class="text-brand-primary font-semibold"
+                  >Bizning maqsadimiz</strong
+                >
+                — sizning muvaffaqiyatli kelajakingiz uchun sifatli ta'lim
+                berish
+              </div>
+
+              <!-- Description -->
+              <p class="text-[19px]">
+                Zamonaviy o'quv dasturlari, tajribali o'qituvchilar va qulay
+                ta'lim muhiti orqali biz sizning bilimli, faol va kelajakda
+                raqobatbardosh bo'lishingizni ta'minlaymiz.
+                <br />
+                Biz har bir o'quvchining qiziqishlari va salohiyatini inobatga
+                olgan holda, ularga o'z yo'lini topishga yordam beramiz.
+                Maqsadimiz — faqatgina bilim berish emas, balki ishonch,
+                tashabbus va yetakchilik ruhini shakllantirish.
+              </p>
+            </div>
+
+            <!-- Video banner -->
+            <div
+              class="group flex items-center justify-center relative bg-white rounded-2xl overflow-hidden"
+            >
+              <img
+                width="610"
+                alt="Ta'lim"
+                height="347"
+                src="./src/assets/backgrounds/education.jpg"
+                class="absolute inset-0 size-full object-cover"
+              />
+
+              <!-- Banner title -->
+              <div
+                class="absolute top-8 left-8 -translate-y-20 bg-brand-dark px-4 py-2 rounded-full text-white text-sm transition-transform duration-200 group-hover:translate-y-0"
+              >
+                Bizning maktab haqida videoni tomosha qiling
+              </div>
+
+              <!-- Play button -->
+              <button
+                id="about-modal-btn"
+                class="flex items-center justify-center z-10 size-16 bg-brand-primary rounded-full shadow transition-colors duration-200 hover:bg-orange-500"
+              >
+                <img
+                  width="28"
+                  height="28"
+                  alt="O'ynatish"
+                  class="size-7 ml-0.5"
+                  src="./src/assets/icons/play.svg"
+                />
+              </button>
+            </div>
+          </div>
+
+          <!-- Sub content -->
+          <div class="bg-white h-40 px-8 rounded-3xl">
+            <ul class="grid grid-cols-3 gap-5 h-full">
+              <!-- 1 -->
+              <li class="flex items-center gap-5">
+                <!-- Icon -->
+                <img
+                  width="64"
+                  height="64"
+                  class="size-16"
+                  alt="Akademik shapka"
+                  src="./src/assets/icons/academic-cap-circle.svg"
+                />
+
+                <!-- Details -->
+                <div class="space-y-3">
+                  <b class="inline-block font-bold text-4xl">10+</b>
+                  <p class="text-xl">Tajribali xodim & mutaxassislar</p>
+                </div>
+              </li>
+
+              <!-- 2 -->
+              <li class="flex items-center gap-5">
+                <!-- Icon -->
+                <img
+                  width="64"
+                  height="64"
+                  class="size-16"
+                  alt="Akademik shapka"
+                  src="./src/assets/icons/list-circle.svg"
+                />
+
+                <!-- Details -->
+                <div class="space-y-3">
+                  <b class="inline-block font-bold text-4xl">5+</b>
+                  <p class="text-xl">Sizga kerakli bo'lgan kurslar</p>
+                </div>
+              </li>
+
+              <!-- 3 -->
+              <li class="flex items-center gap-5">
+                <!-- Icon -->
+                <img
+                  width="64"
+                  height="64"
+                  class="size-16"
+                  alt="Akademik shapka"
+                  src="./src/assets/icons/pc-circle.svg"
+                />
+
+                <!-- Details -->
+                <div class="space-y-3">
+                  <b class="inline-block font-bold text-4xl">30+</b>
+                  <p class="text-xl">Amaliyot uchun jihozlar</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
