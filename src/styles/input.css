@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+/* Config */
+@theme {
+  /* Fonts */
+  --font-inter: "Inter", sans-serif;
+
+  /* Colors */
+  --color-brand-dark: #333;
+  --color-brand-gray: #f8f8f8;
+  --color-brand-primary: #f28347;
+  --color-brand-secondary: #00b533;
+
+  /* Max Width */
+  --max-width-base: 1280px;
+}
+
+/* Base */
+@layer base {
+  body {
+    @apply bg-brand-gray text-brand-dark font-inter;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply max-w-base w-full px-5 mx-auto;
+  }
+}
