@@ -58,7 +58,7 @@
             <!-- Action button -->
             <a
               href="#form"
-              class="btn-3d bg-brand-dark border-gray-500 hover:bg-black"
+              class="btn-3d w-48 bg-brand-dark border-gray-500 hover:bg-black"
             >
               Qabulga yozilish
             </a>
@@ -69,9 +69,11 @@
 
     <!-- Hero -->
     <div class="container">
-      <div class="grid grid-cols-2 gap-5 w-full bg-white rounded-2xl py-8">
+      <div
+        class="grid grid-cols-2 gap-5 relative overflow-hidden w-full bg-white rounded-2xl py-8"
+      >
         <!-- Main content -->
-        <div class="flex flex-col justify-center pl-12">
+        <div class="flex flex-col justify-center pl-12 z-10">
           <!-- Title -->
           <h1 class="text-[40px] font-semibold mb-5">
             Kelajak IT mutaxassislari <br />
@@ -109,7 +111,7 @@
         </div>
 
         <!-- Image -->
-        <div class="flex items-center justify-center size-full">
+        <div class="flex items-center justify-center size-full z-10">
           <img
             width="450"
             height="450"
@@ -118,6 +120,16 @@
             src="./src/assets/images/3d-book.webp"
           />
         </div>
+
+        <!-- Backdrop pattern image -->
+        <img
+          alt=""
+          width="514"
+          height="514"
+          aria-hidden="true"
+          src="./src/assets/images/education-pattern.png"
+          class="absolute right-0 bottom-0 z-0 h-full"
+        />
       </div>
     </div>
   </body>
