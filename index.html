@@ -4,11 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alhikma Ilm</title>
+
+    <!-- Font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./src/styles/fonts/inter.css" />
+
+    <!-- Styles -->
     <link rel="stylesheet" href="./src/styles/output.css" />
   </head>
 
   <!-- Body -->
   <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <!-- Header -->
+    <header class="py-5">
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <h1 class="font-semibold !text-3xl" translate="no">
+            <a href="index.html">Alhikma Ilm</a>
+          </h1>
+
+          <div class="flex items-center gap-5">
+            <!-- Location -->
+            <div class="flex items-center gap-3.5 max-w-96">
+              <img
+                width="28"
+                height="28"
+                class="size-7"
+                alt="Joylashuv"
+                src="./src/assets/icons/location.svg"
+              />
+
+              <address class="not-italic">
+                Andijon viloyati, Bo'ston tumani, Madaniyat markazi binosi,
+                2-qavat
+              </address>
+            </div>
+
+            <!-- Hamburger menu button -->
+            <button class="p-2" aria-label="Menyu" title="Menyuni ochish">
+              <img
+                width="32"
+                height="32"
+                alt="Menyu"
+                class="size-8"
+                src="./src/assets/icons/menu.svg"
+              />
+            </button>
+
+            <!-- Action button -->
+            <a
+              href="#form"
+              class="bg-brand-dark px-6 py-2.5 text-white rounded-full transition-colors duration-200 hover:bg-black"
+            >
+              Qabulga yozilish
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <div class="">
+      <div class="container">
+        <div class="w-full bg-white rounded-2xl py-72"></div>
+      </div>
+    </div>
   </body>
 </html>
