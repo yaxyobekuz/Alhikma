@@ -24,6 +24,14 @@
   button {
     @apply cursor-pointer;
   }
+
+  input {
+    @apply w-full h-14 bg-white px-7 rounded-full text-lg font-medium text-brand-dark border-2 border-transparent outline-none transition-colors duration-200 focus:border-brand-primary;
+  }
+
+  form button {
+    @apply w-full bg-brand-primary !py-3.5 border-orange-800 text-lg hover:bg-orange-500;
+  }
 }
 
 @layer components {
