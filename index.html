@@ -21,15 +21,18 @@
     <!-- Header -->
     <header>
       <div class="container">
-        <div class="flex items-center justify-between h-28">
+        <div class="flex items-center justify-between h-20 sm:h-24 md:h-28">
           <!-- Logo -->
-          <h1 class="font-semibold !text-3xl uppercase" translate="no">
+          <h1
+            class="shrink-0 font-semibold text-[22px] uppercase sm:text-2xl md:text-3xl"
+            translate="no"
+          >
             <a href="index.html">Alhikma Ilm</a>
           </h1>
 
           <div class="flex items-center gap-5">
             <!-- Location -->
-            <div class="flex items-center gap-3.5 max-w-96">
+            <div class="hidden items-center gap-3.5 max-w-96 md:flex">
               <img
                 width="28"
                 height="28"
@@ -45,7 +48,11 @@
             </div>
 
             <!-- Hamburger menu button -->
-            <button class="p-2" aria-label="Menyu" title="Menyuni ochish">
+            <button
+              class="shrink-0 p-2"
+              aria-label="Menyu"
+              title="Menyuni ochish"
+            >
               <img
                 width="32"
                 height="32"
@@ -58,7 +65,7 @@
             <!-- Action button -->
             <a
               href="#form"
-              class="btn-3d w-48 bg-brand-dark border-gray-500 hover:bg-black"
+              class="hidden btn-3d shrink-0 w-48 bg-brand-dark border-gray-500 hover:bg-black md:flex"
             >
               Qabulga yozilish
             </a>
@@ -67,312 +74,409 @@
       </div>
     </header>
 
-    <!-- Hero -->
-    <div class="container">
-      <div
-        class="grid grid-cols-2 gap-5 relative overflow-hidden w-full bg-white rounded-3xl py-8"
-      >
-        <!-- Main content -->
-        <div class="flex flex-col justify-center pl-12 z-10">
-          <!-- Title -->
-          <h1 class="text-[40px] font-semibold mb-5">
-            Kelajak IT mutaxassislari <br />
-            shu yerdan yo'lga chiqadi!
-            <img
-              width="40"
-              height="40"
-              alt="Raketa ikonka"
-              class="inline-block"
-              src="./src/assets/images/3d-rocket.png"
-            />
-          </h1>
+    <div class="hidden">
+      <!-- Hero -->
+      <div class="container">
+        <div
+          class="grid grid-cols-2 gap-5 relative overflow-hidden w-full bg-white rounded-3xl py-8"
+        >
+          <!-- Main content -->
+          <div class="flex flex-col justify-center pl-12 z-10">
+            <!-- Title -->
+            <h1 class="text-[40px] font-semibold mb-5">
+              Kelajak IT mutaxassislari <br />
+              shu yerdan yo'lga chiqadi!
+              <img
+                width="40"
+                height="40"
+                alt="Raketa ikonka"
+                class="inline-block"
+                src="./src/assets/images/3d-rocket.png"
+              />
+            </h1>
 
-          <!-- Description -->
-          <p class="text-xl mb-7">
-            Dasturlash, texnologiyalar va zamonaviy kasblar bo'yicha chuqur
-            bilim oling — amaliy darslar, tajribali mentorlar va real loyihalar
-            bilan!
-          </p>
+            <!-- Description -->
+            <p class="text-xl mb-7">
+              Dasturlash, texnologiyalar va zamonaviy kasblar bo'yicha chuqur
+              bilim oling — amaliy darslar, tajribali mentorlar va real
+              loyihalar bilan!
+            </p>
 
-          <!-- Action buttons -->
-          <div class="flex items-center gap-5">
-            <a
-              href="#form"
-              class="btn-3d w-48 bg-brand-primary border-orange-800 hover:bg-orange-500"
-              >Qabulga yozilish</a
-            >
+            <!-- Action buttons -->
+            <div class="flex items-center gap-5">
+              <a
+                href="#form"
+                class="btn-3d w-48 bg-brand-primary border-orange-800 hover:bg-orange-500"
+                >Qabulga yozilish</a
+              >
 
-            <a
-              href="#courses"
-              class="btn-3d w-48 bg-brand-secondary border-green-800 hover:bg-green-600"
-              >Barcha kurslar</a
-            >
+              <a
+                href="#courses"
+                class="btn-3d w-48 bg-brand-secondary border-green-800 hover:bg-green-600"
+                >Barcha kurslar</a
+              >
+            </div>
           </div>
-        </div>
 
-        <!-- Image -->
-        <div class="flex items-center justify-center size-full z-10">
+          <!-- Image -->
+          <div class="flex items-center justify-center size-full z-10">
+            <img
+              width="450"
+              height="450"
+              class="size-[450px]"
+              alt="Alhikma 3d kitob"
+              src="./src/assets/images/3d-book.webp"
+            />
+          </div>
+
+          <!-- Backdrop pattern image -->
           <img
-            width="450"
-            height="450"
-            class="size-[450px]"
-            alt="Alhikma 3d kitob"
-            src="./src/assets/images/3d-book.webp"
+            alt=""
+            width="514"
+            height="514"
+            aria-hidden="true"
+            src="./src/assets/images/education-pattern.png"
+            class="absolute right-0 bottom-0 z-0 h-full"
           />
         </div>
-
-        <!-- Backdrop pattern image -->
-        <img
-          alt=""
-          width="514"
-          height="514"
-          aria-hidden="true"
-          src="./src/assets/images/education-pattern.png"
-          class="absolute right-0 bottom-0 z-0 h-full"
-        />
       </div>
-    </div>
 
-    <main>
-      <!-- About -->
-      <section id="about" class="py-16">
-        <div class="container">
-          <!-- Title -->
-          <h2 class="inline-block text-[40px] font-semibold mb-5">
-            Biz haqimizda
-          </h2>
+      <main>
+        <!-- About -->
+        <section id="about" class="py-16">
+          <div class="container">
+            <!-- Title -->
+            <h2 class="inline-block text-[40px] font-semibold mb-5">
+              Biz haqimizda
+            </h2>
 
-          <!-- Main content -->
-          <div class="grid grid-cols-2 gap-5 mb-5">
-            <!-- Content details -->
-            <div class="bg-white p-8 rounded-3xl">
-              <!-- Subtitle -->
-              <div class="font-semibold text-2xl mb-5">
-                <strong class="text-brand-primary font-semibold"
-                  >Bizning maqsadimiz</strong
-                >
-                — sizning muvaffaqiyatli kelajakingiz uchun sifatli ta'lim
-                berish
+            <!-- Main content -->
+            <div class="grid grid-cols-2 gap-5 mb-5">
+              <!-- Content details -->
+              <div class="bg-white p-8 rounded-3xl">
+                <!-- Subtitle -->
+                <div class="font-semibold text-2xl mb-5">
+                  <strong class="text-brand-primary font-semibold"
+                    >Bizning maqsadimiz</strong
+                  >
+                  — sizning muvaffaqiyatli kelajakingiz uchun sifatli ta'lim
+                  berish
+                </div>
+
+                <!-- Description -->
+                <p class="text-[19px]">
+                  Zamonaviy o'quv dasturlari, tajribali o'qituvchilar va qulay
+                  ta'lim muhiti orqali biz sizning bilimli, faol va kelajakda
+                  raqobatbardosh bo'lishingizni ta'minlaymiz.
+                  <br />
+                  Biz har bir o'quvchining qiziqishlari va salohiyatini inobatga
+                  olgan holda, ularga o'z yo'lini topishga yordam beramiz.
+                  Maqsadimiz — faqatgina bilim berish emas, balki ishonch,
+                  tashabbus va yetakchilik ruhini shakllantirish.
+                </p>
               </div>
 
-              <!-- Description -->
-              <p class="text-[19px]">
-                Zamonaviy o'quv dasturlari, tajribali o'qituvchilar va qulay
-                ta'lim muhiti orqali biz sizning bilimli, faol va kelajakda
-                raqobatbardosh bo'lishingizni ta'minlaymiz.
-                <br />
-                Biz har bir o'quvchining qiziqishlari va salohiyatini inobatga
-                olgan holda, ularga o'z yo'lini topishga yordam beramiz.
-                Maqsadimiz — faqatgina bilim berish emas, balki ishonch,
-                tashabbus va yetakchilik ruhini shakllantirish.
-              </p>
-            </div>
-
-            <!-- Video banner -->
-            <div
-              class="group flex items-center justify-center relative bg-white rounded-3xl overflow-hidden"
-            >
-              <img
-                width="610"
-                alt="Ta'lim"
-                height="347"
-                src="./src/assets/backgrounds/education.jpg"
-                class="absolute inset-0 size-full object-cover"
-              />
-
-              <!-- Banner title -->
+              <!-- Video banner -->
               <div
-                class="absolute top-8 left-8 -translate-y-20 bg-brand-dark px-4 py-2 rounded-full text-white text-sm transition-transform duration-200 group-hover:translate-y-0"
-              >
-                Bizning maktab haqida videoni tomosha qiling
-              </div>
-
-              <!-- Play button -->
-              <button
-                id="about-modal-btn"
-                class="flex items-center justify-center z-10 size-16 bg-brand-primary rounded-full shadow transition-colors duration-200 hover:bg-orange-500"
+                class="group flex items-center justify-center relative bg-white rounded-3xl overflow-hidden"
               >
                 <img
-                  width="28"
-                  height="28"
-                  alt="O'ynatish"
-                  class="size-7 ml-0.5"
-                  src="./src/assets/icons/play.svg"
+                  width="610"
+                  alt="Ta'lim"
+                  height="347"
+                  src="./src/assets/backgrounds/education.jpg"
+                  class="absolute inset-0 size-full object-cover"
                 />
-              </button>
+
+                <!-- Banner title -->
+                <div
+                  class="absolute top-8 left-8 -translate-y-20 bg-brand-dark px-4 py-2 rounded-full text-white text-sm transition-transform duration-200 group-hover:translate-y-0"
+                >
+                  Bizning maktab haqida videoni tomosha qiling
+                </div>
+
+                <!-- Play button -->
+                <button
+                  id="about-modal-btn"
+                  class="flex items-center justify-center z-10 size-16 bg-brand-primary rounded-full shadow transition-colors duration-200 hover:bg-orange-500"
+                >
+                  <img
+                    width="28"
+                    height="28"
+                    alt="O'ynatish"
+                    class="size-7 ml-0.5"
+                    src="./src/assets/icons/play.svg"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <!-- Sub content -->
+            <div class="bg-white h-40 px-8 rounded-3xl">
+              <ul class="grid grid-cols-3 gap-5 h-full">
+                <!-- 1 -->
+                <li class="flex items-center gap-5">
+                  <!-- Icon -->
+                  <img
+                    width="64"
+                    height="64"
+                    class="size-16"
+                    alt="Akademik shapka"
+                    src="./src/assets/icons/academic-cap-circle.svg"
+                  />
+
+                  <!-- Details -->
+                  <div class="space-y-3">
+                    <b class="inline-block font-bold text-4xl">10+</b>
+                    <p class="text-[19px]">Tajribali xodim & mutaxassislar</p>
+                  </div>
+                </li>
+
+                <!-- 2 -->
+                <li class="flex items-center gap-5">
+                  <!-- Icon -->
+                  <img
+                    width="64"
+                    height="64"
+                    class="size-16"
+                    alt="Akademik shapka"
+                    src="./src/assets/icons/list-circle.svg"
+                  />
+
+                  <!-- Details -->
+                  <div class="space-y-3">
+                    <b class="inline-block font-bold text-4xl">5+</b>
+                    <p class="text-[19px]">Sizga kerakli bo'lgan kurslar</p>
+                  </div>
+                </li>
+
+                <!-- 3 -->
+                <li class="flex items-center gap-5">
+                  <!-- Icon -->
+                  <img
+                    width="64"
+                    height="64"
+                    class="size-16"
+                    alt="Akademik shapka"
+                    src="./src/assets/icons/pc-circle.svg"
+                  />
+
+                  <!-- Details -->
+                  <div class="space-y-3">
+                    <b class="inline-block font-bold text-4xl">30+</b>
+                    <p class="text-[19px]">Amaliyot uchun jihozlar</p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
+        </section>
 
-          <!-- Sub content -->
-          <div class="bg-white h-40 px-8 rounded-3xl">
-            <ul class="grid grid-cols-3 gap-5 h-full">
+        <!-- Features -->
+        <section class="pb-16">
+          <div class="container">
+            <!-- Title -->
+            <h2 class="inline-block text-[40px] font-semibold mb-5">
+              Nima uchun aynan biz?
+            </h2>
+
+            <!-- Main content -->
+            <ol class="grid grid-cols-3 gap-5 mb-5">
               <!-- 1 -->
-              <li class="flex items-center gap-5">
-                <!-- Icon -->
-                <img
-                  width="64"
-                  height="64"
-                  class="size-16"
-                  alt="Akademik shapka"
-                  src="./src/assets/icons/academic-cap-circle.svg"
-                />
+              <li class="bg-white p-8 rounded-3xl">
+                <div class="font-bold text-4xl mb-5 text-brand-primary">1.</div>
 
-                <!-- Details -->
-                <div class="space-y-3">
-                  <b class="inline-block font-bold text-4xl">10+</b>
-                  <p class="text-[19px]">Tajribali xodim & mutaxassislar</p>
-                </div>
+                <!-- Title -->
+                <h3 class="font-semibold text-2xl mb-5">
+                  Tajribali o'qituvchilar
+                </h3>
+
+                <!-- Description -->
+                <p class="text-[19px]">
+                  Har bir o'qituvchimiz o'z sohasining mutaxassisi bo'lib,
+                  o'quvchilarga chuqur va tushunarli bilim berishga intiladi.
+                </p>
               </li>
 
               <!-- 2 -->
-              <li class="flex items-center gap-5">
-                <!-- Icon -->
-                <img
-                  width="64"
-                  height="64"
-                  class="size-16"
-                  alt="Akademik shapka"
-                  src="./src/assets/icons/list-circle.svg"
-                />
+              <li class="bg-white p-8 rounded-3xl">
+                <div class="font-bold text-4xl mb-5 text-brand-primary">2.</div>
 
-                <!-- Details -->
-                <div class="space-y-3">
-                  <b class="inline-block font-bold text-4xl">5+</b>
-                  <p class="text-[19px]">Sizga kerakli bo'lgan kurslar</p>
-                </div>
+                <!-- Title -->
+                <h3 class="font-semibold text-2xl mb-5">Shaxsiy yondashuv</h3>
+
+                <!-- Description -->
+                <p class="text-[19px]">
+                  Biz har bir o'quvchining o'ziga xosligi va qobiliyatini
+                  inobatga olgan holda, ularga individual yondashamiz.
+                </p>
               </li>
 
               <!-- 3 -->
-              <li class="flex items-center gap-5">
-                <!-- Icon -->
-                <img
-                  width="64"
-                  height="64"
-                  class="size-16"
-                  alt="Akademik shapka"
-                  src="./src/assets/icons/pc-circle.svg"
-                />
+              <li class="bg-white p-8 rounded-3xl">
+                <div class="font-bold text-4xl mb-5 text-brand-primary">3.</div>
 
-                <!-- Details -->
-                <div class="space-y-3">
-                  <b class="inline-block font-bold text-4xl">30+</b>
-                  <p class="text-[19px]">Amaliyot uchun jihozlar</p>
-                </div>
+                <!-- Title -->
+                <h3 class="font-semibold text-2xl mb-5">
+                  Amaliy va interaktiv darslar
+                </h3>
+
+                <!-- Description -->
+                <p class="text-[19px]">
+                  Nazariyani amaliyot bilan uyg'unlashtirib, o'quvchilarning
+                  bilimlarini mustahkamlashga katta e'tibor qaratamiz.
+                </p>
               </li>
-            </ul>
+
+              <!-- 4 -->
+              <li class="bg-white p-8 rounded-3xl">
+                <div class="font-bold text-4xl mb-5 text-brand-primary">4.</div>
+
+                <!-- Title -->
+                <h3 class="font-semibold text-2xl mb-5">
+                  Zamonaviy o'quv muhiti
+                </h3>
+
+                <!-- Description -->
+                <p class="text-[19px]">
+                  Qulay sinfxonalar, texnologik vositalar va do'stona muhit —
+                  samarali ta'lim uchun eng yaxshi sharoitlarni yaratamiz.
+                </p>
+              </li>
+
+              <!-- 5 -->
+              <li class="bg-white p-8 rounded-3xl">
+                <div class="font-bold text-4xl mb-5 text-brand-primary">5.</div>
+
+                <!-- Title -->
+                <h3 class="font-semibold text-2xl mb-5">
+                  Iqtidorni rivojlantirish
+                </h3>
+
+                <!-- Description -->
+                <p class="text-[19px]">
+                  Tanlovlar, musobaqalar va to'garaklar orqali o'quvchilarning
+                  ijodkorligi va liderlik qobiliyatini rivojlantiramiz.
+                </p>
+              </li>
+
+              <!-- 6 -->
+              <li class="bg-white p-8 rounded-3xl">
+                <div class="font-bold text-4xl mb-5 text-brand-primary">6.</div>
+
+                <!-- Title -->
+                <h3 class="font-semibold text-2xl mb-5">
+                  Muvaffaqiyatga yo'naltirilgan tizim
+                </h3>
+
+                <!-- Description -->
+                <p class="text-[19px]">
+                  Biz faqat bilim emas, balki hayotda muvaffaqiyatga erishish
+                  uchun zarur bo'lgan ko'nikmalarni ham o'rgatamiz.
+                </p>
+              </li>
+            </ol>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Features -->
-      <section class="pb-16">
-        <div class="container">
-          <!-- Title -->
-          <h2 class="inline-block text-[40px] font-semibold mb-5">
-            Nima uchun aynan biz?
-          </h2>
+        <!-- Order for call -->
+        <section class="pb-16">
+          <div class="container">
+            <div
+              class="relative overflow-hidden bg-brand-dark text-white px-12 py-16 rounded-3xl"
+            >
+              <div class="grid grid-cols-2 gap-5 relative z-10">
+                <!-- Content details -->
+                <div>
+                  <h2 class="text-[40px] font-semibold mb-5 text-brand-primary">
+                    Siz bilan bog'lanib, sizni savolingizga javob beramiz
+                  </h2>
 
-          <!-- Main content -->
-          <ol class="grid grid-cols-3 gap-5 mb-5">
-            <!-- 1 -->
-            <li class="bg-white p-8 rounded-3xl">
-              <div class="font-bold text-4xl mb-5 text-brand-primary">1.</div>
+                  <p class="text-[19px]">
+                    Agar sizda savol yoki takliflar mavjud bo'lsa, biz sizni
+                    eshitishga tayyormiz! Siz shunchaki o'zingizni ismingiz va
+                    telefon raqamingizni biz bilan ulashing. So'ngra
+                    operatorlarimiz qisqa vaqtlar ichida siz bilan
+                    bog'lanishadi.
+                  </p>
+                </div>
 
+                <!-- Form -->
+                <form class="flex flex-col items-center justify-center">
+                  <div class="max-w-md space-y-5">
+                    <!-- Name input -->
+                    <input
+                      name="name"
+                      type="text"
+                      id="name-input"
+                      placeholder="Ismingiz"
+                    />
+
+                    <!-- Tel input -->
+                    <input
+                      type="tel"
+                      name="tel"
+                      id="tel-input"
+                      placeholder="+998 __ ___-__-__"
+                    />
+
+                    <!-- Submit button -->
+                    <div class="flex items-end justify-end h-[60px]">
+                      <button class="btn-3d">Yuborish</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Pattern -->
+              <img
+                alt=""
+                width="382"
+                height="382"
+                aria-hidden="true"
+                class="absolute right-0 inset-y-0 z-0 h-full"
+                src="./src/assets/images/wave-line-pattern.png"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Courses -->
+        <section id="courses" class="pb-16">
+          <div class="container">
+            <div class="flex items-center justify-between mb-5">
               <!-- Title -->
-              <h3 class="font-semibold text-2xl mb-5">
-                Tajribali o'qituvchilar
-              </h3>
+              <h2 class="text-[40px] font-semibold">Barcha kurslar</h2>
 
-              <!-- Description -->
-              <p class="text-[19px]">
-                Har bir o'qituvchimiz o'z sohasining mutaxassisi bo'lib,
-                o'quvchilarga chuqur va tushunarli bilim berishga intiladi.
-              </p>
-            </li>
+              <!-- Action button -->
+              <a
+                href="#form"
+                class="btn-3d w-48 bg-brand-primary border-orange-800 hover:bg-orange-500"
+                >Qabulga yozilish</a
+              >
+            </div>
 
-            <!-- 2 -->
-            <li class="bg-white p-8 rounded-3xl">
-              <div class="font-bold text-4xl mb-5 text-brand-primary">2.</div>
+            <!-- Main content -->
+            <ul id="courses-list" class="grid grid-cols-3 gap-5 mb-5"></ul>
+          </div>
+        </section>
 
-              <!-- Title -->
-              <h3 class="font-semibold text-2xl mb-5">Shaxsiy yondashuv</h3>
+        <!-- FAQ -->
+        <section id="faq" class="pb-16">
+          <div class="container !max-w-5xl">
+            <!-- Title -->
+            <h2 class="text-center text-[40px] font-semibold mb-5">
+              Tez tez so'raladigan savollar
+            </h2>
 
-              <!-- Description -->
-              <p class="text-[19px]">
-                Biz har bir o'quvchining o'ziga xosligi va qobiliyatini inobatga
-                olgan holda, ularga individual yondashamiz.
-              </p>
-            </li>
+            <!-- Main content -->
+            <div id="faq-container" class="space-y-5"></div>
+          </div>
+        </section>
+      </main>
 
-            <!-- 3 -->
-            <li class="bg-white p-8 rounded-3xl">
-              <div class="font-bold text-4xl mb-5 text-brand-primary">3.</div>
-
-              <!-- Title -->
-              <h3 class="font-semibold text-2xl mb-5">
-                Amaliy va interaktiv darslar
-              </h3>
-
-              <!-- Description -->
-              <p class="text-[19px]">
-                Nazariyani amaliyot bilan uyg'unlashtirib, o'quvchilarning
-                bilimlarini mustahkamlashga katta e'tibor qaratamiz.
-              </p>
-            </li>
-
-            <!-- 4 -->
-            <li class="bg-white p-8 rounded-3xl">
-              <div class="font-bold text-4xl mb-5 text-brand-primary">4.</div>
-
-              <!-- Title -->
-              <h3 class="font-semibold text-2xl mb-5">
-                Zamonaviy o'quv muhiti
-              </h3>
-
-              <!-- Description -->
-              <p class="text-[19px]">
-                Qulay sinfxonalar, texnologik vositalar va do'stona muhit —
-                samarali ta'lim uchun eng yaxshi sharoitlarni yaratamiz.
-              </p>
-            </li>
-
-            <!-- 5 -->
-            <li class="bg-white p-8 rounded-3xl">
-              <div class="font-bold text-4xl mb-5 text-brand-primary">5.</div>
-
-              <!-- Title -->
-              <h3 class="font-semibold text-2xl mb-5">
-                Iqtidorni rivojlantirish
-              </h3>
-
-              <!-- Description -->
-              <p class="text-[19px]">
-                Tanlovlar, musobaqalar va to'garaklar orqali o'quvchilarning
-                ijodkorligi va liderlik qobiliyatini rivojlantiramiz.
-              </p>
-            </li>
-
-            <!-- 6 -->
-            <li class="bg-white p-8 rounded-3xl">
-              <div class="font-bold text-4xl mb-5 text-brand-primary">6.</div>
-
-              <!-- Title -->
-              <h3 class="font-semibold text-2xl mb-5">
-                Muvaffaqiyatga yo'naltirilgan tizim
-              </h3>
-
-              <!-- Description -->
-              <p class="text-[19px]">
-                Biz faqat bilim emas, balki hayotda muvaffaqiyatga erishish
-                uchun zarur bo'lgan ko'nikmalarni ham o'rgatamiz.
-              </p>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <!-- Order for call -->
-      <section class="pb-16">
+      <!-- CTA (Form) -->
+      <section id="form">
         <div class="container">
           <div
             class="relative overflow-hidden bg-brand-dark text-white px-12 py-16 rounded-3xl"
@@ -381,14 +485,14 @@
               <!-- Content details -->
               <div>
                 <h2 class="text-[40px] font-semibold mb-5 text-brand-primary">
-                  Siz bilan bog'lanib, sizni savolingizga javob beramiz
+                  Qabulga yozilish uchun ma'lumotlaringizni to'ldiring
                 </h2>
 
                 <p class="text-[19px]">
-                  Agar sizda savol yoki takliflar mavjud bo'lsa, biz sizni
-                  eshitishga tayyormiz! Siz shunchaki o'zingizni ismingiz va
-                  telefon raqamingizni biz bilan ulashing. So'ngra
-                  operatorlarimiz qisqa vaqtlar ichida siz bilan bog'lanishadi.
+                  Qabulga yozilish uchun siz shunchaki ismingizni, telefon
+                  raqamingizni kiriting va kerakli kursni tanlang. So'ngra
+                  operatorlarimiz qisqa vaqtlar ichida siz bilan bog'lanib,
+                  sizga kerakli ma'lumotlarni taqdim etishadi!
                 </p>
               </div>
 
@@ -402,6 +506,16 @@
                     id="name-input"
                     placeholder="Ismingiz"
                   />
+
+                  <!-- Select -->
+                  <select
+                    type="tel"
+                    name="tel"
+                    id="courses-select"
+                    placeholder="+998 __ ___-__-__"
+                  >
+                    <option disabled selected>Kurslardan birini tanlang</option>
+                  </select>
 
                   <!-- Tel input -->
                   <input
@@ -432,147 +546,46 @@
         </div>
       </section>
 
-      <!-- Courses -->
-      <section id="courses" class="pb-16">
+      <!-- Footer -->
+      <footer>
         <div class="container">
-          <div class="flex items-center justify-between mb-5">
-            <!-- Title -->
-            <h2 class="text-[40px] font-semibold">Barcha kurslar</h2>
-
-            <!-- Action button -->
-            <a
-              href="#form"
-              class="btn-3d w-48 bg-brand-primary border-orange-800 hover:bg-orange-500"
-              >Qabulga yozilish</a
+          <div class="flex items-center justify-between h-20 sm:h-24 md:h-28">
+            <!-- Logo -->
+            <h1
+              class="font-semibold text-[22px] uppercase sm:text-2xl md:text-3xl"
+              translate="no"
             >
-          </div>
+              <a href="index.html">Alhikma Ilm</a>
+            </h1>
 
-          <!-- Main content -->
-          <ul id="courses-list" class="grid grid-cols-3 gap-5 mb-5"></ul>
-        </div>
-      </section>
-
-      <!-- FAQ -->
-      <section id="faq" class="pb-16">
-        <div class="container !max-w-5xl">
-          <!-- Title -->
-          <h2 class="text-center text-[40px] font-semibold mb-5">
-            Tez tez so'raladigan savollar
-          </h2>
-
-          <!-- Main content -->
-          <div id="faq-container" class="space-y-5"></div>
-        </div>
-      </section>
-    </main>
-
-    <!-- CTA (Form) -->
-    <section id="form">
-      <div class="container">
-        <div
-          class="relative overflow-hidden bg-brand-dark text-white px-12 py-16 rounded-3xl"
-        >
-          <div class="grid grid-cols-2 gap-5 relative z-10">
-            <!-- Content details -->
-            <div>
-              <h2 class="text-[40px] font-semibold mb-5 text-brand-primary">
-                Qabulga yozilish uchun ma'lumotlaringizni to'ldiring
-              </h2>
-
-              <p class="text-[19px]">
-                Qabulga yozilish uchun siz shunchaki ismingizni, telefon
-                raqamingizni kiriting va kerakli kursni tanlang. So'ngra
-                operatorlarimiz qisqa vaqtlar ichida siz bilan bog'lanib, sizga
-                kerakli ma'lumotlarni taqdim etishadi!
-              </p>
-            </div>
-
-            <!-- Form -->
-            <form class="flex flex-col items-center justify-center">
-              <div class="max-w-md space-y-5">
-                <!-- Name input -->
-                <input
-                  name="name"
-                  type="text"
-                  id="name-input"
-                  placeholder="Ismingiz"
-                />
-
-                <!-- Select -->
-                <select
-                  type="tel"
-                  name="tel"
-                  id="courses-select"
-                  placeholder="+998 __ ___-__-__"
+            <div class="flex items-center gap-8">
+              <!-- Tel -->
+              <div>
+                <a
+                  href="tel:+998742009393"
+                  class="font-medium text-lg transition-colors duration-200 hover:text-brand-primary"
                 >
-                  <option disabled selected>Kurslardan birini tanlang</option>
-                </select>
+                  +998 (74) 200 93 93
+                </a>
 
-                <!-- Tel input -->
-                <input
-                  type="tel"
-                  name="tel"
-                  id="tel-input"
-                  placeholder="+998 __ ___-__-__"
-                />
-
-                <!-- Submit button -->
-                <div class="flex items-end justify-end h-[60px]">
-                  <button class="btn-3d">Yuborish</button>
-                </div>
+                <p class="text-right text-sm text-brand-dark/70">
+                  Du - shan, 9:00 - 18:00
+                </p>
               </div>
-            </form>
-          </div>
 
-          <!-- Pattern -->
-          <img
-            alt=""
-            width="382"
-            height="382"
-            aria-hidden="true"
-            class="absolute right-0 inset-y-0 z-0 h-full"
-            src="./src/assets/images/wave-line-pattern.png"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="flex items-center justify-between h-28">
-          <!-- Logo -->
-          <h1 class="font-semibold !text-3xl uppercase" translate="no">
-            <a href="index.html">Alhikma Ilm</a>
-          </h1>
-
-          <div class="flex items-center gap-8">
-            <!-- Tel -->
-            <div>
+              <!-- Action button -->
               <a
-                href="tel:+998742009393"
-                class="font-medium text-lg transition-colors duration-200 hover:text-brand-primary"
+                target="_blank"
+                href="https://t.me/alhikmagroup"
+                class="btn-3d w-48 bg-blue-400 border-blue-800 hover:bg-blue-500"
               >
-                +998 (74) 200 93 93
+                Telegram
               </a>
-
-              <p class="text-right text-sm text-brand-dark/70">
-                Du - shan, 9:00 - 18:00
-              </p>
             </div>
-
-            <!-- Action button -->
-            <a
-              target="_blank"
-              href="https://t.me/alhikmagroup"
-              class="btn-3d w-48 bg-blue-400 border-blue-800 hover:bg-blue-500"
-            >
-              Telegram
-            </a>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <!-- Scripts -->
     <script type="module" src="./src/scripts/index.js"></script>
