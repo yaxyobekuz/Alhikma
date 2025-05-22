@@ -1,6 +1,8 @@
+import faq from "../data/faq.js";
 import courses from "../data/courses.js";
 
 const elCoursesList = document.getElementById("courses-list");
+const elFaqContainer = document.getElementById("faq-container");
 const elCoursesSelect = document.getElementById("courses-select");
 
 const addCourseItemToCoursesList = ({ image, title, color, soon }) => {
@@ -17,5 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
   courses.forEach((course) => {
     addCourseItemToCoursesList(course);
     addCourseOptionToCoursesSelect(course);
+  });
+
+  faq.forEach(({ question, answer }) => {
+    elFaqContainer.innerHTML += `<details class="group bg-white rounded-3xl"><summary class="font-medium text-xl p-6">${question}?</summary><div class="bg-brand-primary text-white rounded-b-3xl p-6 text-lg">${answer}</div></details>`;
   });
 });
