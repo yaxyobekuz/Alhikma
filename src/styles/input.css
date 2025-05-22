@@ -17,6 +17,11 @@
 
 /* Base */
 @layer base {
+  html,
+  body {
+    @apply scroll-smooth;
+  }
+
   body {
     @apply bg-brand-gray text-brand-dark font-inter;
   }
