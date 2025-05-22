@@ -4,6 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Favicon -->
+    <link
+      sizes="180x180"
+      rel="apple-touch-icon"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+
     <!-- Title -->
     <title>Alhikma Ilm</title>
 
@@ -74,73 +94,75 @@
       </div>
     </header>
 
-    <div class="hidden">
-      <!-- Hero -->
-      <div class="container">
-        <div
-          class="grid grid-cols-2 gap-5 relative overflow-hidden w-full bg-white rounded-3xl py-8"
-        >
-          <!-- Main content -->
-          <div class="flex flex-col justify-center pl-12 z-10">
-            <!-- Title -->
-            <h1 class="text-[40px] font-semibold mb-5">
-              Kelajak IT mutaxassislari <br />
-              shu yerdan yo'lga chiqadi!
-              <img
-                width="40"
-                height="40"
-                alt="Raketa ikonka"
-                class="inline-block"
-                src="./src/assets/images/3d-rocket.png"
-              />
-            </h1>
-
-            <!-- Description -->
-            <p class="text-xl mb-7">
-              Dasturlash, texnologiyalar va zamonaviy kasblar bo'yicha chuqur
-              bilim oling — amaliy darslar, tajribali mentorlar va real
-              loyihalar bilan!
-            </p>
-
-            <!-- Action buttons -->
-            <div class="flex items-center gap-5">
-              <a
-                href="#form"
-                class="btn-3d w-48 bg-brand-primary border-orange-800 hover:bg-orange-500"
-                >Qabulga yozilish</a
-              >
-
-              <a
-                href="#courses"
-                class="btn-3d w-48 bg-brand-secondary border-green-800 hover:bg-green-600"
-                >Barcha kurslar</a
-              >
-            </div>
-          </div>
-
-          <!-- Image -->
-          <div class="flex items-center justify-center size-full z-10">
+    <!-- Hero -->
+    <div class="container !px-1.5 lg:!px-5">
+      <div
+        class="flex flex-col-reverse grid-cols-2 relative overflow-hidden w-full bg-white rounded-3xl py-6 md:flex-row md:grid lg:py-8"
+      >
+        <!-- Main content -->
+        <div class="flex flex-col justify-center px-3.5 z-10 md:pr-0 lg:pl-12">
+          <!-- Title -->
+          <h1
+            class="text-2xl font-semibold mb-5 xs:text-3xl md:text-4xl lg:text-[40px]"
+          >
+            Kelajak IT mutaxassislari <br />
+            shu yerdan yo'lga chiqadi!
             <img
-              width="450"
-              height="450"
-              class="size-[450px]"
-              alt="Alhikma 3d kitob"
-              src="./src/assets/images/3d-book.webp"
+              width="40"
+              height="40"
+              alt="Raketa ikonka"
+              src="./src/assets/images/3d-rocket.png"
+              class="hidden size-8 xs:inline-block md:size-10"
             />
-          </div>
+          </h1>
 
-          <!-- Backdrop pattern image -->
+          <!-- Description -->
+          <p class="text-lg mb-7 sm:text-xl">
+            Dasturlash, texnologiyalar va zamonaviy kasblar bo'yicha chuqur
+            bilim oling — amaliy darslar, tajribali mentorlar va real loyihalar
+            bilan!
+          </p>
+
+          <!-- Action buttons -->
+          <div class="flex flex-wrap items-center gap-5 md:flex-nowrap">
+            <a
+              href="#form"
+              class="btn-3d w-full bg-brand-primary border-orange-800 hover:bg-orange-500 xs:w-48"
+              >Qabulga yozilish</a
+            >
+
+            <a
+              href="#courses"
+              class="btn-3d w-full bg-brand-secondary border-green-800 hover:bg-green-600 xs:w-48"
+              >Barcha kurslar</a
+            >
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="flex items-center justify-center size-full z-10">
           <img
-            alt=""
-            width="514"
-            height="514"
-            aria-hidden="true"
-            src="./src/assets/images/education-pattern.png"
-            class="absolute right-0 bottom-0 z-0 h-full"
+            width="450"
+            height="450"
+            alt="Alhikma 3d kitob"
+            src="./src/assets/images/3d-book.webp"
+            class="w-5/6 xs:w-auto xs:h-full xs:max-h-96 lg:max-h-max lg:size-[450px]"
           />
         </div>
-      </div>
 
+        <!-- Backdrop pattern image -->
+        <img
+          alt=""
+          width="514"
+          height="514"
+          aria-hidden="true"
+          src="./src/assets/images/education-pattern.png"
+          class="absolute right-0 bottom-0 z-0 w-full h-auto md:w-auto md:h-full"
+        />
+      </div>
+    </div>
+
+    <div class="hidden">
       <main>
         <!-- About -->
         <section id="about" class="py-16">

@@ -13,6 +13,9 @@
 
   /* Max Width */
   --max-width-base: 1280px;
+
+  /* Breakpoints */
+  --breakpoint-xs: 425px;
 }
 
 /* Base */
