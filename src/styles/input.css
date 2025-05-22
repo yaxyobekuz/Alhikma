@@ -30,7 +30,8 @@
     @apply cursor-pointer;
   }
 
-  input {
+  input,
+  select {
     @apply w-full h-14 bg-white px-7 rounded-full text-lg font-medium text-brand-dark border-2 border-transparent outline-none transition-colors duration-200 focus:border-brand-primary;
   }
 

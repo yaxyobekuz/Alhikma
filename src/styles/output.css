@@ -543,7 +543,7 @@
   button {
     cursor: pointer;
   }
-  input {
+  input, select {
     height: calc(var(--spacing) * 14);
     width: 100%;
     border-radius: calc(infinity * 1px);
