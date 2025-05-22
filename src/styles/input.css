@@ -29,6 +29,10 @@
     @apply bg-brand-gray text-brand-dark font-inter;
   }
 
+  h2 {
+    @apply text-2xl font-semibold xs:text-3xl md:text-4xl lg:text-[40px];
+  }
+
   button {
     @apply cursor-pointer;
   }
@@ -40,6 +44,10 @@
 
   form button {
     @apply w-full bg-brand-primary !py-3.5 border-orange-800 text-lg hover:bg-orange-500;
+  }
+
+  .container-secondary {
+    @apply max-w-base w-full mx-auto px-1.5 lg:px-5;
   }
 }
 
