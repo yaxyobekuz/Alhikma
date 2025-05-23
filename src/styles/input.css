@@ -14,6 +14,9 @@
   /* Max Width */
   --max-width-base: 1280px;
 
+  /* Height */
+  --height-52: 52px;
+
   /* Breakpoints */
   --breakpoint-xs: 425px;
 }
@@ -52,6 +55,10 @@
 }
 
 @layer components {
+  .btn-3d-wrapper {
+    @apply flex items-end h-52;
+  }
+
   .btn-3d {
     @apply flex items-center justify-center px-6 py-3 text-white border-b-4 font-medium rounded-full transition-[border-width,background-color] active:border-0;
   }
