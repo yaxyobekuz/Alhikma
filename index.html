@@ -595,78 +595,80 @@
       </section>
     </main>
 
-    <div class="hidden">
-      <!-- CTA (Form) -->
-      <section id="form">
-        <div class="container">
-          <div
-            class="relative overflow-hidden bg-brand-dark text-white px-12 py-16 rounded-3xl"
-          >
-            <div class="grid grid-cols-2 gap-5 relative z-10">
-              <!-- Content details -->
-              <div>
-                <h2 class="text-[40px] font-semibold mb-5 text-brand-primary">
+    <!-- CTA (Form) -->
+    <section id="form">
+      <div class="container-secondary">
+        <div
+          class="relative overflow-hidden bg-brand-dark text-white rounded-3xl p-3.5 sm:py-12 lg:px-12 lg:py-16"
+        >
+          <div class="grid grid-cols-1 gap-5 relative z-10 md:grid-cols-2">
+            <!-- Content details -->
+            <div class="flex justify-center items-center md:justify-normal">
+              <div class="max-w-md md:max-w-full">
+                <h2 class="mb-5 text-brand-primary">
                   Qabulga yozilish uchun ma'lumotlaringizni to'ldiring
                 </h2>
 
-                <p class="text-[19px]">
+                <p class="text-lg sm:text-[19px]">
                   Qabulga yozilish uchun siz shunchaki ismingizni, telefon
                   raqamingizni kiriting va kerakli kursni tanlang. So'ngra
                   operatorlarimiz qisqa vaqtlar ichida siz bilan bog'lanib,
                   sizga kerakli ma'lumotlarni taqdim etishadi!
                 </p>
               </div>
-
-              <!-- Form -->
-              <form class="flex flex-col items-center justify-center">
-                <div class="max-w-md space-y-5">
-                  <!-- Name input -->
-                  <input
-                    name="name"
-                    type="text"
-                    id="name-input"
-                    placeholder="Ismingiz"
-                  />
-
-                  <!-- Select -->
-                  <select
-                    type="tel"
-                    name="tel"
-                    id="courses-select"
-                    placeholder="+998 __ ___-__-__"
-                  >
-                    <option disabled selected>Kurslardan birini tanlang</option>
-                  </select>
-
-                  <!-- Tel input -->
-                  <input
-                    type="tel"
-                    name="tel"
-                    id="tel-input"
-                    placeholder="+998 __ ___-__-__"
-                  />
-
-                  <!-- Submit button -->
-                  <div class="flex items-end justify-end h-[60px]">
-                    <button class="btn-3d">Yuborish</button>
-                  </div>
-                </div>
-              </form>
             </div>
 
-            <!-- Pattern -->
-            <img
-              alt=""
-              width="382"
-              height="382"
-              aria-hidden="true"
-              class="absolute right-0 inset-y-0 z-0 h-full"
-              src="./src/assets/images/wave-line-pattern.png"
-            />
-          </div>
-        </div>
-      </section>
+            <!-- Form -->
+            <form class="flex flex-col items-center justify-center">
+              <div class="space-y-5 max-w-md md:max-w-max lg:max-w-md">
+                <!-- Name input -->
+                <input
+                  name="name"
+                  type="text"
+                  id="name-input"
+                  placeholder="Ismingiz"
+                />
 
+                <!-- Select -->
+                <select
+                  type="tel"
+                  name="tel"
+                  id="courses-select"
+                  placeholder="+998 __ ___-__-__"
+                >
+                  <option disabled selected>Kurslardan birini tanlang</option>
+                </select>
+
+                <!-- Tel input -->
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel-input"
+                  placeholder="+998 __ ___-__-__"
+                />
+
+                <!-- Submit button -->
+                <div class="flex items-end justify-end h-[60px]">
+                  <button class="btn-3d">Yuborish</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Pattern -->
+          <img
+            alt=""
+            width="382"
+            height="382"
+            aria-hidden="true"
+            class="absolute right-0 inset-y-0 z-0 h-full"
+            src="./src/assets/images/wave-line-pattern.png"
+          />
+        </div>
+      </div>
+    </section>
+
+    <div class="hidden">
       <!-- Footer -->
       <footer>
         <div class="container">
