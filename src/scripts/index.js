@@ -6,9 +6,9 @@ const elFaqContainer = document.getElementById("faq-container");
 const elCoursesSelect = document.getElementById("courses-select");
 
 const addCourseItemToCoursesList = ({ image, title, color, soon }) => {
-  elCoursesList.innerHTML += `<li style="background-color: ${color};" class="overflow-hidden relative h-80 bg-white p-8 rounded-3xl"><h3 class="font-semibold text-2xl">${title} ${
+  elCoursesList.innerHTML += `<li style="background-color: ${color};" class="overflow-hidden relative h-80 bg-white rounded-3xl p-3.5 lg:p-8"><h3 class="font-semibold text-xl md:text-2xl">${title} ${
     soon ? "<sup class='text-brand-dark/70'>(Tez kunda)</sup>" : ""
-  }</h3><img alt="" width="288" height="288" src="${image}" class="absolute size-72 -bottom-8 -right-8" /></li>`;
+  }</h3><img alt="" width="288" height="288" src="${image}" class="absolute -bottom-8 -right-8 aspect-square max-w-72 w-full h-auto xs:max-w-max xs:w-auto xs:h-11/12 sm:h-auto sm:w-11/12 lg:size-72" /></li>`;
 };
 
 const addCourseOptionToCoursesSelect = ({ title }) => {

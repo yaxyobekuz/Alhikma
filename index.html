@@ -546,29 +546,43 @@
           </div>
         </div>
       </section>
-    </main>
 
-    <div class="hidden">
       <!-- Courses -->
       <section id="courses" class="pb-16">
-        <div class="container">
-          <div class="flex items-center justify-between mb-5">
+        <div class="container-secondary">
+          <div class="flex items-center justify-between mb-5 mx-3.5 lg:mx-auto">
             <!-- Title -->
-            <h2 class="text-[40px] font-semibold">Barcha kurslar</h2>
+            <h2>Barcha kurslar</h2>
 
             <!-- Action button -->
-            <a
-              href="#form"
-              class="btn-3d w-48 bg-brand-primary border-orange-800 hover:bg-orange-500"
-              >Qabulga yozilish</a
-            >
+            <div class="hidden btn-3d-wrapper sm:flex">
+              <a
+                href="#form"
+                class="btn-3d w-48 bg-brand-primary border-orange-800 hover:bg-orange-500"
+                >Qabulga yozilish</a
+              >
+            </div>
           </div>
 
           <!-- Main content -->
-          <ul id="courses-list" class="grid grid-cols-3 gap-5 mb-5"></ul>
+          <ul
+            id="courses-list"
+            class="grid grid-cols-1 gap-5 mb-5 sm:mb-0 sm:grid-cols-2 md:grid-cols-3"
+          ></ul>
+
+          <!-- Mobile action button -->
+          <div class="btn-3d-wrapper mx-3.5 sm:hidden">
+            <a
+              href="#form"
+              class="btn-3d w-full bg-brand-primary border-orange-800 hover:bg-orange-500 xs:w-48"
+              >Qabulga yozilish</a
+            >
+          </div>
         </div>
       </section>
+    </main>
 
+    <div class="hidden">
       <!-- FAQ -->
       <section id="faq" class="pb-16">
         <div class="container !max-w-5xl">
