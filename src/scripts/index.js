@@ -22,6 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   faq.forEach(({ question, answer }) => {
-    elFaqContainer.innerHTML += `<details class="group bg-white rounded-3xl"><summary class="font-medium text-xl p-6">${question}?</summary><div class="bg-brand-primary text-white rounded-b-3xl p-6 text-lg">${answer}</div></details>`;
+    elFaqContainer.innerHTML += `<details class="group bg-white rounded-3xl"><summary class="font-medium text-lg p-3.5 sm:py-6 sm:text-xl lg:p-6">${question}?</summary><div class="bg-brand-primary text-white rounded-b-3xl p-3.5 md:text-lg lg:p-6">${answer}</div></details>`;
   });
 });
