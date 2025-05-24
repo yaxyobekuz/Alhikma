@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uz">
+  <!-- Head -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -65,10 +66,16 @@
     />
     <link rel="manifest" href="./site.webmanifest" />
 
-    <!-- Fonts & Styles -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./src/styles/fonts/inter.css" />
+
+    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./src/styles/output.css" />
   </head>
 
@@ -705,6 +712,93 @@
         </div>
       </section>
 
+      <!-- Gallery -->
+      <section id="gallery" class="pb-16">
+        <div class="container-secondary">
+          <div class="flex items-center justify-between mb-5 mx-3.5 lg:mx-auto">
+            <!-- Title -->
+            <h2>Foto galareya</h2>
+
+            <!-- Navigation buttons -->
+            <div class="flex items-center gap-5">
+              <!-- Prev -->
+              <div class="btn-3d-wrapper !h-14">
+                <button
+                  title="Avvalgi"
+                  aria-label="Avvalgi"
+                  class="btn-3d !static swiper-button-prev justify-center !size-auto bg-brand-primary border-orange-800 !px-3.5 !py-3 after:!content-['']"
+                >
+                  <img
+                    width="24"
+                    height="24"
+                    alt="Chap tomon"
+                    src="./src/assets/icons/right.svg"
+                    class="size-6 lg:size-7 rotate-180"
+                  />
+                </button>
+              </div>
+
+              <!-- Next -->
+              <div class="btn-3d-wrapper !h-14">
+                <button
+                  title="Keyingi"
+                  aria-label="Keyingi"
+                  class="btn-3d !static swiper-button-next justify-center !size-auto bg-brand-primary border-orange-800 !px-3.5 !py-3 after:!content-['']"
+                >
+                  <img
+                    width="24"
+                    height="24"
+                    alt="O'ng tomon"
+                    class="size-6 lg:size-7"
+                    src="./src/assets/icons/right.svg"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider main container -->
+          <div
+            class="swiper h-60 overflow-hidden rounded-3xl xs:h-80 sm:h-96 md:h-[456px] lg:h-[512px]"
+          >
+            <ul class="swiper-wrapper h-full">
+              <!-- 1 -->
+              <li class="swiper-slide size-full bg-white">
+                <img
+                  height="412"
+                  width="1240"
+                  alt="Foto galareya rasm"
+                  class="size-full object-cover"
+                  src="./src/assets/backgrounds/gallery-1.jpg"
+                />
+              </li>
+
+              <!-- 2 -->
+              <li class="swiper-slide size-full bg-white">
+                <img
+                  height="412"
+                  width="1240"
+                  alt="Foto galareya rasm"
+                  class="size-full object-cover"
+                  src="./src/assets/backgrounds/gallery-2.jpg"
+                />
+              </li>
+
+              <!-- 3 -->
+              <li class="swiper-slide size-full bg-white">
+                <img
+                  height="412"
+                  width="1240"
+                  alt="Foto galareya rasm"
+                  class="size-full object-cover"
+                  src="./src/assets/backgrounds/gallery-3.jpg"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <!-- FAQ -->
       <section id="faq" class="pb-16">
         <div class="container-secondary !max-w-5xl">
@@ -848,6 +942,7 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./src/scripts/index.js"></script>
   </body>
 </html>
