@@ -1,0 +1,1 @@
+export const openElement=s=>{s.classList.remove("hidden"),setTimeout(()=>s.classList.remove("opacity-0"),0)};export const closeElement=s=>{s.classList.add("opacity-0"),setTimeout(()=>s.classList.add("hidden"),300)};
