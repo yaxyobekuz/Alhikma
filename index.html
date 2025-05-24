@@ -106,8 +106,9 @@
             <!-- Hamburger menu button -->
             <button
               class="shrink-0 p-2"
-              aria-label="Menyu"
+              id="open-menu-button"
               title="Menyuni ochish"
+              aria-label="Menyuni ochish"
             >
               <img
                 width="32"
@@ -129,6 +130,125 @@
         </div>
       </div>
     </header>
+
+    <!-- Nav Menu -->
+    <div
+      id="menu"
+      class="hidden fixed inset-0 z-20 size-full bg-white/70 opacity-0 transition-opacity duration-300"
+    >
+      <div class="grid grid-cols-1 size-full md:grid-cols-2">
+        <!-- Form -->
+        <form class="hidden size-full bg-white px-5 md:flex lg:px-16 xl:px-28">
+          <div class="flex items-center justify-end w-full">
+            <div class="space-y-5 max-w-md w-full">
+              <!-- Content details -->
+              <div class="">
+                <h2 class="mb-5 text-brand-primary">Qo'ng'iroqqa buyurtma</h2>
+
+                <p class="text-lg sm:text-[19px]">
+                  O'zingizni ismingiz va telefon raqamingizni biz bilan
+                  ulashing. So'ngra operatorlarimiz qisqa vaqtlar ichida siz
+                  bilan bog'lanishadi.
+                </p>
+              </div>
+
+              <!-- Name input -->
+              <input
+                name="name"
+                type="text"
+                id="name-input"
+                class="bg-brand-gray"
+                placeholder="Ismingiz"
+              />
+
+              <!-- Tel input -->
+              <input
+                type="tel"
+                name="tel"
+                id="tel-input"
+                class="bg-brand-gray"
+                placeholder="+998 __ ___-__-__"
+              />
+
+              <!-- Submit button -->
+              <div class="flex items-end justify-end h-[60px]">
+                <button class="btn-3d">Yuborish</button>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <!-- Nav -->
+        <nav
+          class="flex relative size-full bg-brand-primary px-5 lg:px-16 xl:px-28"
+        >
+          <div class="flex items-center justify-start w-full">
+            <ul class="space-y-5 w-full">
+              <!-- Home -->
+              <li>
+                <a
+                  href="#"
+                  class="menu-link text-xl font-medium text-white xs:font-semibold xs:text-2xl md:text-3xl"
+                  >Bosh sahifa</a
+                >
+              </li>
+
+              <!-- About -->
+              <li>
+                <a
+                  href="#about"
+                  class="menu-link text-xl font-medium text-white xs:font-semibold xs:text-2xl md:text-3xl"
+                  >Biz haqimizda</a
+                >
+              </li>
+
+              <!-- Courses -->
+              <li>
+                <a
+                  href="#courses"
+                  class="menu-link text-xl font-medium text-white xs:font-semibold xs:text-2xl md:text-3xl"
+                  >Barcha kurslar</a
+                >
+              </li>
+
+              <!-- FAQ -->
+              <li>
+                <a
+                  href="#faq"
+                  class="menu-link text-xl font-medium text-white xs:font-semibold xs:text-2xl md:text-3xl"
+                  >Tez tez so'raladigan savollar</a
+                >
+              </li>
+
+              <!-- Form -->
+              <li>
+                <a
+                  href="#form"
+                  class="menu-link text-xl font-medium text-white xs:font-semibold xs:text-2xl md:text-3xl"
+                  >Qabulga yozilish</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Close btn -->
+          <button
+            id="close-menu-button"
+            title="Menyuni yopish"
+            aria-label="Menyuni yopish"
+            class="flex items-center justify-center absolute top-4 right-5 size-12 sm:top-6 md:top-8 md:right-8"
+          >
+            <img
+              width="32"
+              height="32"
+              alt="Yopish"
+              class="size-9"
+              src="./src/assets/icons/cross.svg"
+            />
+          </button>
+        </nav>
+      </div>
+    </div>
 
     <!-- Hero -->
     <div class="container-secondary">
