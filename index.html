@@ -383,7 +383,7 @@
 
               <!-- Play button -->
               <button
-                id="about-modal-btn"
+                id="play-button"
                 class="flex items-center justify-center z-10 size-12 bg-brand-primary rounded-full shadow transition-colors duration-200 hover:bg-orange-500 lg:size-16"
               >
                 <img
@@ -940,6 +940,43 @@
         </div>
       </div>
     </footer>
+
+    <div
+      id="modal"
+      class="hidden opacity-0 fixed inset-0 z-20 size-full bg-white/50 backdrop-blur-sm transition-opacity duration-300"
+    >
+      <div class="flex items-center justify-center size-full">
+        <div class="relative">
+          <!-- Youtube video -->
+          <iframe
+            width="896"
+            height="384"
+            allowfullscreen
+            title="Maktab haqida"
+            referrerpolicy="strict-origin-when-cross-origin"
+            class="max-w-3xl h-60 mx-1.5 bg-white rounded-3xl xs:h-72 sm:h-96"
+            src="https://www.youtube.com/embed/P6FORpg0KVo?si=iPXJ7kJPYgjTuiEz"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
+
+          <!-- Close button -->
+          <button
+            id="close-modal-button"
+            title="Modalni yopish"
+            aria-label="Modalni yopish"
+            class="flex items-center justify-center absolute -top-14 right-5"
+          >
+            <img
+              width="32"
+              height="32"
+              alt="Yopish"
+              class="size-9"
+              src="./src/assets/icons/cross-black.svg"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
