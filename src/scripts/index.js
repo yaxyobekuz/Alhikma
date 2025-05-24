@@ -26,6 +26,17 @@ const addCourseOptionToCoursesSelect = ({ title }) => {
   elCoursesSelect.innerHTML += `<option value="${title}">${title}</option>`;
 };
 
+const tag = document.createElement("script");
+tag.src = "https://www.youtube.com/iframe_api";
+const firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+let ytPlayer;
+
+window.onYouTubeIframeAPIReady = function () {
+  ytPlayer = new YT.Player("iframe");
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   // Manage menu
   const handleOpenMenu = () => openElement(elMenu);
@@ -37,7 +48,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Manage modal
   const handleOpenModal = () => openElement(elModal);
-  const handleCloseModal = () => closeElement(elModal);
+  const handleCloseModal = () => {
+    closeElement(elModal);
+
+    if (ytPlayer && ytPlayer.pauseVideo) {
+      ytPlayer.pauseVideo();
+    }
+  };
 
   elPlayButton.addEventListener("click", handleOpenModal);
   elCloseModalButton.addEventListener("click", handleCloseModal);
