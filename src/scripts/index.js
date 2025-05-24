@@ -1,9 +1,17 @@
+// Data
 import faq from "../data/faq.js";
 import courses from "../data/courses.js";
 
+// Helpers
+import { closeElement, openElement } from "./helpers.js";
+
+const elMenu = document.getElementById("menu");
+const elMenuLinks = document.querySelectorAll(".menu-link");
 const elCoursesList = document.getElementById("courses-list");
 const elFaqContainer = document.getElementById("faq-container");
 const elCoursesSelect = document.getElementById("courses-select");
+const elOpenMenuButton = document.getElementById("open-menu-button");
+const elCloseMenuButton = document.getElementById("close-menu-button");
 
 const addCourseItemToCoursesList = ({ image, title, color, soon }) => {
   elCoursesList.innerHTML += `<li style="background-color: ${color};" class="overflow-hidden relative h-80 bg-white rounded-3xl p-3.5 lg:p-8"><h3 class="font-semibold text-xl md:text-2xl">${title} ${
@@ -16,12 +24,27 @@ const addCourseOptionToCoursesSelect = ({ title }) => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Add course items to courses list
   courses.forEach((course) => {
     addCourseItemToCoursesList(course);
     addCourseOptionToCoursesSelect(course);
   });
 
+  // Generate FAQ items
   faq.forEach(({ question, answer }) => {
     elFaqContainer.innerHTML += `<details class="group bg-white rounded-3xl"><summary class="font-medium text-lg p-3.5 sm:py-6 sm:text-xl lg:p-6">${question}?</summary><div class="bg-brand-primary text-white rounded-b-3xl p-3.5 md:text-lg lg:p-6">${answer}</div></details>`;
+  });
+
+  // Manage menu
+  const handleOpenMenu = () => openElement(elMenu);
+  const handleCloseMenu = () => closeElement(elMenu);
+
+  elOpenMenuButton.addEventListener("click", handleOpenMenu);
+  elCloseMenuButton.addEventListener("click", handleCloseMenu);
+  elMenuLinks.forEach((l) => l.addEventListener("click", handleCloseMenu));
+
+  document.addEventListener("keydown", (e) => {
+    const isOpenMenu = !elMenu.getAttribute("class").includes("hidden");
+    if (e.key === "Escape" && isOpenMenu) handleCloseMenu();
   });
 });
