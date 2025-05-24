@@ -6,12 +6,15 @@ import courses from "../data/courses.js";
 import { closeElement, openElement } from "./helpers.js";
 
 const elMenu = document.getElementById("menu");
+const elModal = document.getElementById("modal");
+const elPlayButton = document.getElementById("play-button");
 const elMenuLinks = document.querySelectorAll(".menu-link");
 const elCoursesList = document.getElementById("courses-list");
 const elFaqContainer = document.getElementById("faq-container");
 const elCoursesSelect = document.getElementById("courses-select");
 const elOpenMenuButton = document.getElementById("open-menu-button");
 const elCloseMenuButton = document.getElementById("close-menu-button");
+const elCloseModalButton = document.getElementById("close-modal-button");
 
 const addCourseItemToCoursesList = ({ image, title, color, soon }) => {
   elCoursesList.innerHTML += `<li style="background-color: ${color};" class="overflow-hidden relative h-80 bg-white rounded-3xl p-3.5 lg:p-8"><h3 class="font-semibold text-xl md:text-2xl">${title} ${
@@ -32,9 +35,24 @@ document.addEventListener("DOMContentLoaded", () => {
   elCloseMenuButton.addEventListener("click", handleCloseMenu);
   elMenuLinks.forEach((l) => l.addEventListener("click", handleCloseMenu));
 
+  // Manage modal
+  const handleOpenModal = () => openElement(elModal);
+  const handleCloseModal = () => closeElement(elModal);
+
+  elPlayButton.addEventListener("click", handleOpenModal);
+  elCloseModalButton.addEventListener("click", handleCloseModal);
+
+  // Manage modal & menu
   document.addEventListener("keydown", (e) => {
-    const isOpenMenu = !elMenu.getAttribute("class").includes("hidden");
-    if (e.key === "Escape" && isOpenMenu) handleCloseMenu();
+    if (e.key === "Escape") {
+      const checkOpen = (el) => !el.getAttribute("class").includes("hidden");
+
+      const isOpenMenu = checkOpen(elMenu);
+      const isOpenModal = checkOpen(elModal);
+
+      isOpenMenu && handleCloseMenu();
+      isOpenModal && handleCloseModal();
+    }
   });
 
   // Add course items to courses list
