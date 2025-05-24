@@ -24,17 +24,6 @@ const addCourseOptionToCoursesSelect = ({ title }) => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Add course items to courses list
-  courses.forEach((course) => {
-    addCourseItemToCoursesList(course);
-    addCourseOptionToCoursesSelect(course);
-  });
-
-  // Generate FAQ items
-  faq.forEach(({ question, answer }) => {
-    elFaqContainer.innerHTML += `<details class="group bg-white rounded-3xl"><summary class="font-medium text-lg p-3.5 sm:py-6 sm:text-xl lg:p-6">${question}?</summary><div class="bg-brand-primary text-white rounded-b-3xl p-3.5 md:text-lg lg:p-6">${answer}</div></details>`;
-  });
-
   // Manage menu
   const handleOpenMenu = () => openElement(elMenu);
   const handleCloseMenu = () => closeElement(elMenu);
@@ -46,5 +35,27 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("keydown", (e) => {
     const isOpenMenu = !elMenu.getAttribute("class").includes("hidden");
     if (e.key === "Escape" && isOpenMenu) handleCloseMenu();
+  });
+
+  // Add course items to courses list
+  courses.forEach((course) => {
+    addCourseItemToCoursesList(course);
+    addCourseOptionToCoursesSelect(course);
+  });
+
+  // Generate FAQ items
+  faq.forEach(({ question, answer }) => {
+    elFaqContainer.innerHTML += `<details class="group bg-white rounded-3xl"><summary class="font-medium text-lg p-3.5 sm:py-6 sm:text-xl lg:p-6">${question}?</summary><div class="bg-brand-primary text-white rounded-b-3xl p-3.5 md:text-lg lg:p-6">${answer}</div></details>`;
+  });
+
+  // Gallery swiper
+  new Swiper(".swiper", {
+    loop: true,
+
+    // Navigation
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 });
