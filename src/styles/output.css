@@ -351,14 +351,8 @@
   .h-60 {
     height: calc(var(--spacing) * 60);
   }
-  .h-72 {
-    height: calc(var(--spacing) * 72);
-  }
   .h-80 {
     height: calc(var(--spacing) * 80);
-  }
-  .h-96 {
-    height: calc(var(--spacing) * 96);
   }
   .h-\[60px\] {
     height: 60px;
@@ -548,6 +542,9 @@
   .p-3\.5 {
     padding: calc(var(--spacing) * 3.5);
   }
+  .p-16 {
+    padding: calc(var(--spacing) * 16);
+  }
   .\!px-3\.5 {
     padding-inline: calc(var(--spacing) * 3.5) !important;
   }
@@ -578,11 +575,23 @@
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
   }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
+  .pt-8 {
+    padding-top: calc(var(--spacing) * 8);
+  }
+  .pt-16 {
+    padding-top: calc(var(--spacing) * 16);
+  }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
+  }
+  .pb-8 {
+    padding-bottom: calc(var(--spacing) * 8);
   }
   .pb-16 {
     padding-bottom: calc(var(--spacing) * 16);
